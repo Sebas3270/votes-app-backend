@@ -25,8 +25,12 @@
             name: 'Sebas'
         })
 
-        socket.on('message', (payload) => { 
+        socket.on('new-message', (payload) => { 
             console.log(payload)
+        })
+
+        socket.on('active-sports', (payload) => { 
+            console.table(payload)
         })
     </script>
 
