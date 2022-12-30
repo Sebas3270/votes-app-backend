@@ -5,10 +5,11 @@ const Sport = require('../models/sport')
 
 const sports = new Sports()
 
-sports.addSport(new Sport('Basquetball'));
-sports.addSport(new Sport('Soccer'));
-sports.addSport(new Sport('Tenis'));
-sports.addSport(new Sport('Crossfit'));
+sports.addSport(new Sport('Crossfit', 5));
+sports.addSport(new Sport('Soccer', 1));
+sports.addSport(new Sport('Basketball', 2));
+sports.addSport(new Sport('Tenis', 4));
+sports.addSport(new Sport('Swimming', 2));
 
 console.log(sports);
 
